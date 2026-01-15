@@ -9,10 +9,10 @@ import CV from '../assets/CV.pdf'
 import { DownloadIcon, Mail } from 'lucide-react'
 const Hero = ({ darkMode } ) => {
     const socialIcons=[
-        {icon : linkdIn ,alt:'LinkdIn'},
-        {icon : github ,alt:'Github'},
-        {icon : whatsapp ,alt:'Whatspp'},
-        {icon : instagram ,alt:'instagram'},
+        {icon : linkdIn ,alt:'LinkdIn' ,url:'https://www.linkedin.com/in/tushar-malav-6b9634272/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BvwiEvcM0SkaZI2XeLQ%2Bccw%3D%3D' },
+        {icon : github ,alt:'Github',url:'https://github.com/tusharmalav01'},
+        {icon : whatsapp ,alt:'Whatspp', url:'https://wa.me/917073053210'},
+        {icon : instagram ,alt:'instagram',url:'https://www.instagram.com/tushar_malav_01/'},
 
     ];
     const darkTheme={
@@ -24,7 +24,7 @@ const Hero = ({ darkMode } ) => {
     const lightTheme={
         textPrimary : 'text-gray-900',
         textSecondary: 'text-gray-700',
-        buttonSecondary: `text-gray-800 border-2 border-orange-500 hover:bg-text-white`,
+        buttonSecondary: `text-black border-2 border-orange-500  hover:bg-orange-500`,
         decorativeCircle: 'bg-orange-400  opacity-20',
     };
     const theme=darkMode ? darkTheme :lightTheme;
@@ -41,7 +41,7 @@ const Hero = ({ darkMode } ) => {
                     <div className='flex justify-center lg:justify-start  gap-4 sm:gap-6 mb-6 sm:mb-7 w-full'>
                         {socialIcons.map((social,index)=>(
                             <a key={index}
-                            href='#'
+                            href={social.url}
                             target='_blank'
                             data-aos-delay={`${400 +index * 100}`}
                             className='transform hover:scale-110 transition-transform duration-300'>
@@ -83,7 +83,7 @@ const Hero = ({ darkMode } ) => {
                             </a>
                             <a href="#contact" className='w-full sm:w-auto'>
                                 <button className={`w-full sm:w-auto inline-flex items-center 
-                                ${theme.buttonSecondary} justify-center text-white border-0 py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform'>`}>
+                                ${theme.buttonSecondary} justify-center py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform'>`}>
                                     <Mail className='w-4 h-4 sm:w-5 sm:h-5 mr-2'/>
                                     Contact Me
                                 </button>
@@ -106,22 +106,19 @@ const Hero = ({ darkMode } ) => {
                         </div>
                         <img
                             src={hi}
-  alt="Hi Icon"
-  className="
-    absolute
-    left-[10%]
-    top-[8%]
-    w-10 h-10
-    sm:left-[18%]
-    sm:top-[12%]
-    sm:w-16 sm:h-16
-    object-contain
-    animate-bounce
-    z-20
-  "
-/>
-
-
+                             alt="Hi Icon"
+                             className="
+                                absolute
+                                left-[10%]
+                                top-[8%]
+                                w-10 h-10
+                                sm:left-[18%]
+                                sm:top-[12%]
+                                sm:w-16 sm:h-16
+                                object-contain
+                                animate-bounce
+                                z-20
+                            "/>
                     </div>
                 </div>
             </div>

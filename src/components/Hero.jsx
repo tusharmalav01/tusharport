@@ -7,7 +7,13 @@ import hi from '../assets/hi.png'
 import instagram from '../assets/instagram.png'
 import CV from '../assets/TusharMalav.pdf'
 import { DownloadIcon, Mail } from 'lucide-react'
+import React from 'react'
+import { Typewriter } from 'react-simple-typewriter'
+
+
 const Hero = ({ darkMode } ) => {
+            
+
     const socialIcons=[
         {icon : linkdIn ,alt:'LinkdIn' ,url:'https://www.linkedin.com/in/tushar-malav-6b9634272/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BvwiEvcM0SkaZI2XeLQ%2Bccw%3D%3D' },
         {icon : github ,alt:'Github',url:'https://github.com/tusharmalav01'},
@@ -61,12 +67,32 @@ const Hero = ({ darkMode } ) => {
                     data-aos-delay='500'>
                     Hi, I'm Tushar Malav
                     </h1>
-                    <p className={`mb-6 sm:mb-8 leading-relaxed max-w-md sm:max-w-lg ${theme.textSecondary}`}
-                    data-aos='fade-up'
-                    data-aos-delay='600'>
-                        Detail-oriented Full Stack Developer and Final Year B.Tech CSE student with a focus on building scalable web
-                        applications. 
-                    </p>
+                    <p
+                        className={`mb-6 sm:mb-8 leading-relaxed text-4xl max-w-md sm:max-w-lg ${theme.textSecondary}`}
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                        >
+                         Software{' '}
+                        <span className="text-orange-400 font-bold">
+                            {' '}
+                            <Typewriter
+                            words={[
+                                'Engineer',
+                                'Developer',
+                                
+                            ]}
+                            loop={true}
+                            cursor
+                            cursorStyle="|"
+                            typeSpeed={70}
+                            deleteSpeed={50}
+                            delaySpeed={1500}
+                            />
+                        </span>
+                        </p>
+
+
+
                     {/* buttons */}
                     <div className='w-full pt-4 sm:pt-6'>
                         <div className='flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4'
@@ -95,8 +121,9 @@ const Hero = ({ darkMode } ) => {
                 data-aos='fade-left'
                 data-aos-delay='400'
                 >
-                    <div className='relative w-4/5 sm:w-3/4 lg:w-full -translate-y-8 sm:-translate-12
-                    lg:-translate-y-13 transition-transform'>
+                    <div className='relative w-4/5 sm:w-3/4 lg:w-full sm:-translate-
+                    12
+                    lg:-translate-y-16 transition-transform'>
                         <div className='relative overflow-hidden'>
                              <img 
                              src={hero}
@@ -106,17 +133,10 @@ const Hero = ({ darkMode } ) => {
                         <img
                             src={hi}
                              alt="Hi Icon"
-<<<<<<< HEAD
                              className='
                                 absolute
                                 left-[15%]
                                 top-[15%]
-=======
-                             className="
-                                absolute
-                                left-[10%]
-                                top-[8%]
->>>>>>> 6a8ff68e4413a3658ced16f6cef924e2b7777fe7
                                 w-10 h-10
                                 sm:left-[18%]
                                 sm:top-[12%]
@@ -124,11 +144,7 @@ const Hero = ({ darkMode } ) => {
                                 object-contain
                                 animate-bounce
                                 z-20
-<<<<<<< HEAD
                             '/>
-=======
-                            "/>
->>>>>>> 6a8ff68e4413a3658ced16f6cef924e2b7777fe7
                     </div>
                 </div>
             </div>

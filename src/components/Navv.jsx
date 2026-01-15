@@ -7,7 +7,7 @@ const Navv = ({darkMode, toggleDarkMode}) => {
     const[isMenuOpen,setIsMenuOpen] = useState(false)
 
     const navItems = [
-        {name : 'Home', link : '../Hero.jsx/'} ,
+        {name : 'Home', link : '/'} ,
         {name : 'About', link : '#about'} ,
         {name : 'Skills', link : '#skills'} ,
         {name : 'Projects', link : '#projects'} ,

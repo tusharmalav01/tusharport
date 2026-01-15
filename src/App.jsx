@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'
 
 import Navv from "./components/Navv"
 import Hero from "./components/Hero"
+import About from "./components/About"
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true)
@@ -35,6 +36,7 @@ const App = () => {
       }>
         <Navv darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
         <Hero darkMode={darkMode} />
+        <About darkMode={darkMode} />
     </div>
   )
 }

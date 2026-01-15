@@ -106,10 +106,17 @@ const Hero = ({ darkMode } ) => {
                         <img
                             src={hi}
                              alt="Hi Icon"
+<<<<<<< HEAD
                              className='
                                 absolute
                                 left-[15%]
                                 top-[15%]
+=======
+                             className="
+                                absolute
+                                left-[10%]
+                                top-[8%]
+>>>>>>> 6a8ff68e4413a3658ced16f6cef924e2b7777fe7
                                 w-10 h-10
                                 sm:left-[18%]
                                 sm:top-[12%]
@@ -117,7 +124,11 @@ const Hero = ({ darkMode } ) => {
                                 object-contain
                                 animate-bounce
                                 z-20
+<<<<<<< HEAD
                             '/>
+=======
+                            "/>
+>>>>>>> 6a8ff68e4413a3658ced16f6cef924e2b7777fe7
                     </div>
                 </div>
             </div>

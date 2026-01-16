@@ -1,5 +1,5 @@
 import { section } from 'framer-motion/client'
-import about from '../assets/heroo.png'
+import about from '../assets/1.png'
 import React from 'react'
 
 const About = ( {darkMode} ) => {
@@ -10,7 +10,7 @@ const About = ( {darkMode} ) => {
             data-aos='fade-up'
             data-aos-delay='300'
             className="flex flex-wrap justify-center gap-4 relative order-2 lg:order-1">
-                <div className="relative w-75 h-75 lg:w-96 lg:h-96">
+                <div className="relative w-75 h-85 lg:w-96 lg:h-108">
                     {/* Image */}
                     <div className="absolute -inset-4 lg:-inset-20 bg-linear-to-l from-[#f97316] via-[#fb923c] to-[#f59e0b] rotate-12 star-shape z-0"
                     data-aos='zoom-in'

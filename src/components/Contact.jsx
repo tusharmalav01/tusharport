@@ -9,10 +9,10 @@ const Contact = ({ darkMode }) => {
                 e.preventDefault();
 
                 emailjs.sendForm(
-                "service_m0zj7q8",
-                "template_82fwnv5",
+                "service_7y44foz",
+                "template_wmrtfxo",
                 formRef.current,
-                "AHEDPFhtGihO-OGKR"
+                "6a1nPYFVllcKNFYCw"
                 )
                 .then(() => {
                 alert("Message sent successfully ✅");

@@ -1,22 +1,31 @@
 
- import C from '../assets/c++.png'
+ import C from '../assets/Skills/c++.png'
+ import Js from '../assets/Skills/js.png'
+ import  React from '../assets/Skills/react.png'
+ import Tailwind from '../assets/Skills/tailwind.png'
+ import Node from '../assets/Skills/nodejs.png'
+ import Express from '../assets/Skills/expressjs.png'
+ import Mongo from '../assets/Skills/mongodb.png'
+ import mysql from '../assets/Skills/mysql.png'
 
 const Skills = ({ darkMode }) => {
 const skills=[
-    {name:'C++',icon: C , level:95,
+    {name:'C++',icon: C , level:92,
         color: 'from-orange-500 to-amber-500'},
-    {name:'C++',icon: C , level:95,
-        color: 'from-orange-500 to-amber-500'},
-    {name:'C++',icon: C , level:95,
-        color: 'from-orange-500 to-amber-500'},
-    {name:'C++',icon: C , level:95,
-        color: 'from-orange-500 to-amber-500'},
-    {name:'C++',icon: C , level:95,
-        color: 'from-orange-500 to-amber-500'},
-    {name:'C++',icon: C , level:95,
-        color: 'from-orange-500 to-amber-500'},
-    {name:'C++',icon: C , level:95,
-        color: 'from-orange-500 to-amber-500'},        
+    {name:'JavaScript(ES6+)',icon: Js , level:90,
+        color: 'from-blue-500 to-cyan-500'},
+    {name:'React.js',icon: React , level:92,
+        color: 'from-yellow-500 to-amber-500'},
+    {name:'Tailwind CSS',icon: Tailwind , level:85,
+        color: 'from-cyan-500 to-blue-500'},
+    {name:'Node.js',icon: Node , level:93,
+        color: 'from-teal-500 to-cyan-500'},
+    {name:'Express.js',icon: Express , level:83,
+        color: 'from-green-500 to-emerald-500'},
+    {name:'MongoDB',icon: Mongo , level:75,
+        color: 'from-blue-500 to-indigo-500'},
+    {name:'MySQL',icon: mysql , level:95,
+        color: 'from-red-500 to-orange-500'},        
 ]
 
   return (
@@ -46,7 +55,7 @@ const skills=[
                     style={{
                         color:darkMode? '#d1d5db': '#4b5563'
                     }}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, at.
+                        I enjoy turning complex problems into simple, beautiful, and intuitive digital solutions.
                     </p>
 
                 </div>
@@ -95,7 +104,7 @@ const skills=[
                                         }}>
                                             Proficiency
                                         </span>
-                                        <span 
+                                        {/* <span 
                                         style={{
                                             background:'linear-gradient(to right,#f97316,#f59e0b)',
                                             WebkitBackgroundClip:'text',
@@ -105,7 +114,7 @@ const skills=[
                                         className='font-bold'>
                                             {skill.level}%
 
-                                        </span>
+                                        </span> */}
 
                                     </div>
                                     <div className='w-full rounded-full h-3 overflow-hidden'

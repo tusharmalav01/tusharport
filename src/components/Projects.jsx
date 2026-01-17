@@ -1,29 +1,30 @@
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 import { div } from 'framer-motion/client'
 import project1 from '../assets/project.png'
+import project2 from '../assets/cs.png'
 
 const Projects = ({ darkMode }) => {
     const projects=[
         {
             id:1,
             title:'E-commerce Platform',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque!',
+            desc: 'A modern e-commerce platform featuring product listings, category browsing, and a responsive user interface built with React and Node.js.',
             image:project1,
-            tags:['React','node.js','mongodb']
+            tags:['React','Node.js','Express.js','Mongodb']
         },
         {
             id:2,
-            title:'E-commerce Platform',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque!',
-            image:project1,
-            tags:['React','node.js','mongodb']
+            title:'coming soon',
+            desc: 'Wait For some time',
+            image:project2,
+            tags:[]
         },
         {
             id:3,
-            title:'E-commerce Platform',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque!',
-            image:project1,
-            tags:['React','node.js','mongodb']
+            title:'coming soon',
+            desc: 'Wait For some time',
+            image:project2,
+            tags:[]
         }
     ]
   return (

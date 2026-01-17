@@ -1,4 +1,5 @@
-import { FaGithub, FaHeart, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaCopyright, FaGithub, FaHeart, FaLinkedin, FaRegCopyright, FaTwitter } from "react-icons/fa";
+import { FaX, FaXTwitter } from "react-icons/fa6";
 
 const Footer = ({ darkMode }) => {
 
@@ -32,24 +33,33 @@ const Footer = ({ darkMode }) => {
                 </div>
                 <div className="flex gap-4"> 
                 <a
-                href="#"
+                href="https://github.com/tusharmalav01"
+                target="_blank"
+                rel="noopener noreferrer"
+
                 className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-orange-500 hover:to-amber-500 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]">
                     <FaGithub/>
                 </a>
                 <a
-                href="#"
+                href="https://www.linkedin.com/in/tushar-malav-6b9634272/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BvwiEvcM0SkaZI2XeLQ%2Bccw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+
                 className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-orange-500 hover:to-amber-500 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]">
                     <FaLinkedin />
                 </a>
                 <a
-                href="#"
+                href="https://x.com/tushar_malav_01"
+                target="_blank"
+                rel="noopener noreferrer"
+
                 className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-orange-500 hover:to-amber-500 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]">
-                    <FaTwitter />
+                    <FaXTwitter />
                 </a>
             </div>
             <div className="text-center md:text-right">
                 <p className="text-sm flex items-center justify-end gap-1 text-[#6b7280] dark:text-[#9ca3af]">
-                    @{currentYear} Made with
+                    <FaRegCopyright/>{currentYear} Made with
                     <FaHeart className="text-red-500"/>
                     by <span className="mt-2 text-[#f97316]">
                         Tushar

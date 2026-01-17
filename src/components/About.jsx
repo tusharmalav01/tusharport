@@ -42,10 +42,8 @@ const About = ( {darkMode} ) => {
                 }`}
                 data-aos='fade-up'
                 data-aos-delay='500'>
-                    Detail-oriented Full Stack Developer and Final Year B.Tech CSE student with a focus on building scalable web
-                    applications. Proficient in the MERN stack (MongoDB, Express.js, React, Node.js) and C++. Demonstrated
-                    ability to architect RESTful APIs and responsive front-end interfaces. Passionate about solving complex algorithmic
-                    challenges and optimizing web performance.
+                    I am a passionate Full Stack Developer and final-year B.Tech CSE student, focused on building modern, scalable, and high-performance web applications. I work primarily with the MERN stack (MongoDB, Express.js, React, Node.js) and have a strong foundation in C++. I enjoy designing clean RESTful APIs, crafting responsive user interfaces, and solving complex problems through efficient code. Always eager to learn new technologies and improve performance-driven solutions.
+
                 </p>
                 <div className='flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8'>
                     <div className='text-center' data-aos='zoom-in' data-aos-delay='650'>

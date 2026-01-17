@@ -1,4 +1,4 @@
-import hero from '../assets/heroo.png'
+import hero from '../assets/Contact.png'
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 

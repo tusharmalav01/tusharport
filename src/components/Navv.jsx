@@ -1,13 +1,34 @@
 import { motion } from "framer-motion";
 import { Menu, Moon, MoonIcon, Sun, X } from "lucide-react";
-import { useState } from "react"
+import { useState ,useEffect } from "react"
 
 const Navv = ({darkMode, toggleDarkMode}) => {
-    const [activeSection, setActiveSection] = useState('home');
+            const [activeSection, setActiveSection] = useState('home');
+                useEffect(() => {
+            const sections = document.querySelectorAll("section[id]");
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                    setActiveSection(entry.target.id);
+                    }
+                });
+                },
+                {
+                threshold: 0.3, // 60% section visible
+                }
+            );
+
+            sections.forEach((section) => observer.observe(section));
+
+            return () => observer.disconnect();
+            }, []);
+
     const[isMenuOpen,setIsMenuOpen] = useState(false)
 
     const navItems = [
-        {name : 'Home', link : '#'} ,
+        {name : 'Home', link : '#home'} ,
         {name : 'About', link : '#about'} ,
         {name : 'Skills', link : '#skills'} ,
         {name : 'Projects', link : '#projects'} ,

@@ -1,5 +1,5 @@
 import { section } from 'framer-motion/client'
-import about from '../assets/1.png'
+import about from '../assets/About.png'
 import React from 'react'
 
 const About = ( {darkMode} ) => {

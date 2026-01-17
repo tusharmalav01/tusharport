@@ -31,8 +31,6 @@ const skills=[
   return (
     <section 
     id="skills"
-    style={{
-        backgroundColor: darkMode ? '#111827' : '#f9fafb'}}
     className='py-14 relative overflow-hidden'>
         <div className='relative overflow-hidden'>
             <div className='container px-5 py-14 mx-auto'>

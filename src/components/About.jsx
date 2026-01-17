@@ -4,7 +4,7 @@ import React from 'react'
 
 const About = ( {darkMode} ) => {
   return (
-    <section id="about" className={`min-h-screen overflow-hidden flex items-center justify-center px-4 sm:px-6 `}>
+    <section id="about" className={`py-20 lg:py-24 overflow-hidden flex items-center justify-center px-4 sm:px-6 `}>
         <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <figure 
             data-aos='fade-up'
@@ -12,14 +12,14 @@ const About = ( {darkMode} ) => {
             className="flex flex-wrap justify-center gap-4 relative order-2 lg:order-1">
                 <div className="relative w-75 h-85 lg:w-96 lg:h-108">
                     {/* Image */}
-                    <div className="absolute -inset-4 lg:-inset-20 bg-linear-to-l from-[#f97316] via-[#fb923c] to-[#f59e0b] rotate-12 star-shape z-0"
+                    <div className="absolute -inset-4 lg:-inset-20 bg-linear-to-l from-[#f97316] via-[#fb923c] to-[#f59e0b] rotate-12 star-shape z-0 "
                     data-aos='zoom-in'
                     data-aos-delay='600'>
                     </div>
                     <img 
                     src={about} 
                     alt="About Image"
-                    className='absolute inset-0 w-full h-full object-cover z-10 transition-all duration-300'
+                    className='absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-300 transform hover:scale-105'
                     data-aos='zoom-in'
                     data-aos-delay='400' />
 
@@ -46,22 +46,17 @@ const About = ( {darkMode} ) => {
 
                 </p>
                 <div className='flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8'>
+                   
                     <div className='text-center' data-aos='zoom-in' data-aos-delay='650'>
                     <div className='text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400'>5+</div>
                     <div className={`text-xs sm:text-sm lg:text-base ${darkMode ?'text-gray-300': 'text-gray-600'}`}>
-                        Education
+                       Academic & Personal Projects
                     </div>
                     </div>
                     <div className='text-center' data-aos='zoom-in' data-aos-delay='650'>
-                    <div className='text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400'>5+</div>
+                    <div className='text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400'>6+</div>
                     <div className={`text-xs sm:text-sm lg:text-base ${darkMode ?'text-gray-300': 'text-gray-600'}`}>
-                        Years Expierence
-                    </div>
-                    </div>
-                    <div className='text-center' data-aos='zoom-in' data-aos-delay='650'>
-                    <div className='text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400'>10+</div>
-                    <div className={`text-xs sm:text-sm lg:text-base ${darkMode ?'text-gray-300': 'text-gray-600'}`}>
-                        Projects Completed
+                        Months Practical Experience
                     </div>
                     </div>
                 </div>

@@ -50,7 +50,7 @@ const Contact = ({ darkMode }) => {
                 style={{
                     color:darkMode ? '#d1d5db' :'#6b7280'
                 }}>
-                    Let's discuss your Project
+                    Open to internships, freelance & full-time roles
                 </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 items-center">

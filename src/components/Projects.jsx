@@ -135,7 +135,7 @@ const Projects = ({ darkMode }) => {
 
             </div>
             <div className='text-center mt-10'>
-                  <a href="#"
+                  <a href="https://github.com/tusharmalav01"
                     style={{
                     background: 'linear-gradient(to right,#f97316,#f5920b )' }}
                     className='inline-flex  items-center font-semibold  gap-2 px-7 py-4 text-white text-sm rounded-full hover:shadow-lg hover:shadow-orange-500/25 transition-all' 

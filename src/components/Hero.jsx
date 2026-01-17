@@ -105,7 +105,7 @@ const Hero = ({ darkMode } ) => {
                                     
                                 </button>
                             </a>
-                            <a href="#contact" className='w-full sm:w-auto'>
+                            <a href="mailto:tushar.malav.info@gmail.com" className='w-full sm:w-auto'>
                                 <button className={`w-full sm:w-auto inline-flex items-center 
                                 ${theme.buttonSecondary} justify-center py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform'>`}>
                                     <Mail className='w-4 h-4 sm:w-5 sm:h-5 mr-2'/>

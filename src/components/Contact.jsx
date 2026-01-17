@@ -1,5 +1,29 @@
 import hero from '../assets/heroo.png'
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+
 const Contact = ({ darkMode }) => {
+        const formRef = useRef();
+
+            const sendEmail = (e) => {
+                e.preventDefault();
+
+                emailjs.sendForm(
+                "service_7y44foz",
+                "template_wmrtfxo",
+                formRef.current,
+                "6a1nPYFVllcKNFYCw"
+                )
+                .then(() => {
+                alert("Message sent successfully ✅");
+                formRef.current.reset();
+                })
+                .catch(() => {
+                alert("Failed to send message ❌");
+                });
+            };
+
+
   return (
     <section
     id="contact"
@@ -41,6 +65,7 @@ const Contact = ({ darkMode }) => {
                      className='w-full max-w-xs sm:max-w-sm lg:max-w-md h-auto object-contain' />
                 </div>
                 <form 
+                ref={formRef} onSubmit={sendEmail}
                 style={{
                     background:darkMode 
                     ? 'linear-gradient(to right, #1f2937,#111827)':'linear-gradient(to right,#ffffff,#f9fafb)',
@@ -51,6 +76,7 @@ const Contact = ({ darkMode }) => {
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-3 sm:mb-4'>
                         {/* first name */}
                         <input type="text"
+                         name="first_name"
                         placeholder='First Name'
                         style={{
                             backgroundColor:darkMode ? '#374151':'#faede3',
@@ -61,6 +87,7 @@ const Contact = ({ darkMode }) => {
                         focus:ring-orange-500/20 transition-all' required/>
                         {/* last name */}
                         <input type="text"
+                         name="last_name"
                         placeholder='Last Name'
                         style={{
                             backgroundColor:darkMode ? '#374151':'#faede3',
@@ -71,6 +98,7 @@ const Contact = ({ darkMode }) => {
                         focus:ring-orange-500/20 transition-all' required/>
                         {/* email */}
                         <input type="email"
+                        name="email"
                         placeholder='Email Address'
                         style={{
                             backgroundColor:darkMode ? '#374151':'#faede3',
@@ -82,6 +110,7 @@ const Contact = ({ darkMode }) => {
                         />
                         {/* telephone */}
                         <input type="tel"
+                         name="phone"
                         placeholder='Phone Number'
                         style={{
                             backgroundColor:darkMode ? '#374151':'#faede3',
@@ -94,6 +123,7 @@ const Contact = ({ darkMode }) => {
                         {/* Message */}
                         <textarea 
                         rows='4'
+                         name="message"
                         placeholder='Your Message'
                         style={{
                             backgroundColor:darkMode ? '#374151':'#faede3',
